@@ -42,3 +42,7 @@ Route::get('/test', function () {
     //return $user->havePermission('role.index');
 
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
