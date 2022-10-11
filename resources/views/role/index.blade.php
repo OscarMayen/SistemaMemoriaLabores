@@ -1,9 +1,7 @@
-@extends('layouts.app')
-
+@extends('adminlte::page')
+@section('title', 'Roles')
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+
             <div class="card">
                 <div class="card-header"><h2>Lista de Roles</h2></div>
 
@@ -11,7 +9,7 @@
                     @can('haveaccess', 'role.create')
                         <a href="{{ route('role.create') }}"
                             class="btn btn-primary float-right"
-                        > New
+                        > Agregar nuevo Rol
                         </a>
                     @endcan
                     <br><br>
@@ -38,6 +36,7 @@
                                 <td>{{ $role->slug }}</td>
                                 <td>{{ $role->description }}</td>
                                 <td>{{ $role['full-access'] }}</td>
+
                                 <td>
                                     @can('haveaccess', 'role.show')
                                         <a class="btn btn-info" href="{{ route ('role.show', $role->id) }}">Ver</a>
@@ -65,7 +64,4 @@
                         {{ $roles->links() }}
                 </div>
             </div>
-        </div>
-    </div>
-</div>
 @endsection

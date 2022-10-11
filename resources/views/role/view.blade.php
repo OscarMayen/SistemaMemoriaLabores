@@ -1,11 +1,8 @@
-@extends('layouts.app')
-
+@extends('adminlte::page')
+@section('title', 'Roles')
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
             <div class="card">
-                <div class="card-header"><h2>Detail Rol</h2></div>
+                <div class="card-header"><h2>Detalle Rol</h2></div>
 
                 <div class="card-body">
                     @include('custom.message')
@@ -86,13 +83,10 @@
                                 </div>
                             @endforeach
                             <hr>
-                            <a class="btn btn-success" href="{{route('role.edit', $role->id)}}">Edit</a>
+                            <a class="btn btn-success" href="{{route('role.edit', $role->id)}}">Editar</a>
                             <a class="btn btn-danger" href="{{route('role.index')}}">Atras</a>
                         </div>
                     </form>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
 @endsection

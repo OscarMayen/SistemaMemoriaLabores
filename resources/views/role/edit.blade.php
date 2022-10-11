@@ -1,11 +1,8 @@
-@extends('layouts.app')
-
+@extends('adminlte::page')
+@section('title', 'Roles')
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
             <div class="card">
-                <div class="card-header"><h2>Edit Rol</h2></div>
+                <div class="card-header"><h2>Editar Rol</h2></div>
 
                 <div class="card-body">
                     @include('custom.message')
@@ -92,7 +89,4 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
 @endsection
