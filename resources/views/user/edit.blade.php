@@ -2,7 +2,7 @@
 @section('title', 'Usuario')
 @section('content')
             <div class="card">
-                <div class="card-header"><h2>Edit User</h2></div>
+                <div class="card-header"><h2>Editar Usuario</h2></div>
 
                 <div class="card-body">
                     @include('custom.message')

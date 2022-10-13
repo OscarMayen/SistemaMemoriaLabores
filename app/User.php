@@ -44,8 +44,6 @@ class User extends Authenticatable
 
     public function adminlte_desc()
 {
-    $roles=User::get();
-    return $roles;
 
 }
 

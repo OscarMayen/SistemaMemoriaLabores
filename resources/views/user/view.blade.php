@@ -2,7 +2,7 @@
 @section('title', 'Usuario')
 @section('content')
             <div class="card">
-                <div class="card-header"><h2>Detail User</h2></div>
+                <div class="card-header"><h2>Detalle de Usuario</h2></div>
 
                 <div class="card-body">
                     @include('custom.message')
@@ -41,7 +41,7 @@
                                </select>
                             </div>
                             <hr>
-                            <a class="btn btn-success" href="{{route('user.edit', $user->id)}}">Edit</a>
+                            <a class="btn btn-success" href="{{route('user.edit', $user->id)}}">Editar</a>
                             <a class="btn btn-danger" href="{{route('user.index')}}">Atras</a>
                         </div>
                     </form>

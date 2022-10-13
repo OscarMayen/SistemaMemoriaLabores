@@ -107,7 +107,7 @@ return [
     */
 
     'preloader' => [
-        'enabled' => true,
+        'enabled' => false,
         'img' => [
             'path' => 'vendor/adminlte/dist/img/Ues.png',
             'width' => 60,
@@ -291,24 +291,24 @@ return [
         
        
         // Sidebar items:
+        ['header' => 'ADMINISTRACIÓN'],
         [
             'text'        => 'Roles',
             'url'         => 'role',
             'icon'        => 'fas fa-solid fa-users',
             'label_color' => 'success',
         ],
-        ['header' => 'account_settings'],
         [
             'text' => 'Usuarios',
             'url'  => 'user',
             'icon' => 'fas fa-fw fa-user',
         ],
-        [
+      /*  [
             'text' => 'change_password',
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
+        ],*/
+    /*    [
             'text'    => 'multilevel',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
@@ -345,7 +345,7 @@ return [
                     'url'  => '#',
                 ],
             ],
-        ],
+        ],*/
        
     ],
 
